@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Husein">
+    <meta nama="nim" content="253307046">
+    <title>Halaman Beranda</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        fieldset {
+            width: 400px;
+            padding: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 100vh;
+            background: #ccc;
+            padding: 30px;
+        }
+
+        article{
+            float: right;
+            padding: 5%;
+            width: 70%;
+            height: 100vh;
+        }    
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>WEB GW</h2>
+    </header>
+    
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="SVG.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Form</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 class="judul">FORM PENJADWALAN PERTEMUAN</h1>
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+
+                <form>
+                    <label>Nama</label>
+                    <input type="text" name="nama"><br>
+
+                    <label>No. Telepon</label>
+                    <input type="text" name="telepon"><br>
+
+                    <label>Alamat Email</label>
+                    <input type="email" name="email"><br>
+
+                    <label>Tanggal Lahir</label>
+                    <input type="date" name="tgl_lahir"><br>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Permintaan Pertemuan</legend>
+
+                <form>
+                    <label>Nama</label>
+                    <input type="text" name="nama"><br>
+
+                    <label>Tingkat Kepentingan Pertemuan</label>
+                    <input type="range" id="kepentingan" name="kepentingan" min="0" max="100">
+
+                    <label>Tanggal</label>
+                    <input type="date" name="tgl"><br>
+
+                    <label>Waktu</label>
+                    <input type="time" name="waktu"><br>
+                </form>
+            </fieldset>
+            <button type="submit">Kirim</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>FOOTER</p>
+    </footer>
+</body>
+</html>
