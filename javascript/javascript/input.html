@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Input Data</title></head>
+
+<body>
+<h2>Input Data</h2>
+<input type="text" id="nama" placeholder="Masukkan nama">
+<button onclick="inputData()">Submit</button>
+<p id="output"></p>
+
+<script>
+function inputData(){
+    let nama = document.getElementById("nama").value;
+    document.getElementById("output").innerHTML = "Halo " + nama;
+}
+</script>
+</body>
+</html>

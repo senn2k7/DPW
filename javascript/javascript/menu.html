@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="toggle">Toggle Menu</button>
+<ul id="menu" style="display:none;">
+<li>Home</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+
+<script>
+$("#toggle").click(function(){
+    $("#menu").slideToggle();
+});
+</script>
+</body>
+</html>

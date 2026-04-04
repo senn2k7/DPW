@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* menjadi fleksibel dengan mengatur property display dengan nilai flex */
+        .wadah_flex {
+            display: flex;
+            background-color: aqua;
+        }
+
+        /* Skenario 2 */
+        .wadah_flex > div {
+            background-color: blue;
+            margin: 10px;
+            padding: 30px;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+   <p>Kesimpulan skenario 2: Flex container mengatur posisi child secara horizontal.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <style>
+#bar {width:100%; background:#ddd;}
+#prog {width:0%; height:20px; background:green;}
+</style>
+</head>
+<body>
+    
+    <button onclick="start()">Download</button>
+<div id="bar">
+<div id="prog"></div>
+</div>
+
+<script>
+function start(){
+    let w = 0;
+    let i = setInterval(function(){
+        if(w>=100){
+            clearInterval(i);
+        } else {
+            w++;
+            document.getElementById("prog").style.width = w+"%";
+        }
+    },50);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* menjadi fleksibel dengan mengatur property display dengan nilai flex */
+        .wadah_flex {
+            display: flex;
+            background-color: aqua;
+            /* Skenario 5 */
+            flex-flow: column wrap;
+        }
+        
+        /* Skenario 2 */
+        .wadah_flex > div {
+            background-color: blue;
+            margin: 10px;
+            padding: 30px;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+   <p>Kesimpulan skenario 5:  flex-flow: column wrap adalah singkatan CSS untuk mengatur flex-direction: column dan flex-wrap: wrap. Ini menyusun item secara vertikal dari atas ke bawah dan membungkusnya ke kolom baru jika ruang vertikal habis, menciptakan tata letak multi-kolom</p>
+</body>
+</html>

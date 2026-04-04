@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+</head>
+<body>
+<h2>Radio Box</h2>
+<input type="radio" name="gender" value="Laki-laki">Laki-laki
+<input type="radio" name="gender" value="Perempuan">Perempuan
+<button onclick="pilih()">Pilih</button>
+<p id="hasil"></p>
+
+<script>
+function pilih(){
+    let r = document.getElementsByName("gender");
+    for(let i=0;i<r.length;i++){
+        if(r[i].checked){
+            document.getElementById("hasil").innerHTML = r[i].value;
+        }
+    }
+}
+</script>
+</body>
+</html>

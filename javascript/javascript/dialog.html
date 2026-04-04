@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <button id="open">Buka Dialog</button>
+<div id="dialog" style="display:none; border:1px solid black; padding:10px;">
+Ini dialog sederhana
+</div>
+
+<script>
+$("#open").click(function(){
+    $("#dialog").toggle();
+});
+</script>
+</body>
+</html>

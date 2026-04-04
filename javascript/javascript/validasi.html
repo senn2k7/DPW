@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi</title>
+</head>
+<body>
+    <h2>Validasi Form</h2>
+<form onsubmit="return validasi()">
+<input type="text" id="email" placeholder="Masukkan email">
+<button type="submit">Submit</button>
+</form>
+
+<script>
+function validasi(){
+    let email = document.getElementById("email").value;
+    if(email == ""){
+        alert("Tidak boleh kosong");
+        return false;
+    }
+    alert("Valid");
+    return true;
+}
+</script>
+</body>
+</html>

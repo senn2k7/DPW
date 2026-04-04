@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="simple.html">Simple Selector</a></li>
+        <li><a href="combinator.html">Combinator Selector</a></li>
+        <li><a href="pseudo.html">Pseudo Class</a></li>
+        <li><a href="pseudo_elemen.html">Pseudo Element</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="header.html">Header</a></li>
+        <li><a href="display.html">Display</a></li>
+        <li><a href="hyperlink.html">Hyperlink</a></li>
+        <li><a href="selector.html">Selector</a></li>
+        <li><a href="border.html">Border</a></li>
+        <li><a href="margin.html">Margin</a></li>
+        <li><a href="padding.html">Padding</a></li>
+    </ul>
+
+    <style>
+        div p {  
+            color: red;
+        }
+
+        div > p {
+            background-color: yellow;
+        }
+
+        div + p {
+            background-color: darkgray;
+        }
+
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+
+    <div>
+        <p>1. This is paragraph. Terangkan kesimpulan tentang selektor no 1 pada paragraf ini</p>
+        <p>2. This is paragraph. Terangkan kesimpulan tentang selektor no 2 pada paragraf ini</p>
+    </div>
+    <p>3. This is a paragraph. Terangkan kesimpulan tentang no 3 pada paragraf ini</p>
+    <p>4. This is a paragraph. Terangkan kesimpulan tentang no 4 pada paragraf ini</p>
+</body>
+</html>

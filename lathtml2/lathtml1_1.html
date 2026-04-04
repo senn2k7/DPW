@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIPE INPUT</title>
+</head>
+<body>
+    
+    <h1>Daftar Halaman</h1>
+    <ul>
+        <li><a href="coba_form.html">Coba Form</a></li>
+        <li><a href="lathtml_2_1.html">Latihan HTML 2.1</a></li>
+        <li><a href="lathtml_2_2.html">Latihan HTML 2.2</a></li>
+        <li><a href="lathtml_2_4.html">Latihan HTML 2.4</a></li>
+        <li><a href="lathtml_2_5.html">Latihan HTML 2.5</a></li>
+        <li><a href="lathtml_2_6.html">Latihan HTML 2.6</a></li>
+        <li><a href="lathtml_2_7.html">Latihan HTML 2.7</a></li>
+        <li><a href="lathtml1_1.html">Latihan HTML1 1</a></li>
+        <li><a href="lathtml2_3.html">Latihan HTML2 3</a></li>
+    </ul>
+
+    <label for="username">type "text" :</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="pwd">type "password" :</label>
+    <input type="password" id="pwd" name="pwd"><br>
+
+    <hr>
+    <h3>Uji coba 2</h3>
+    <input type="radio" name="html" id="html" value="html"><label for="html">HTML</label><br>
+    <input type="radio" name="css" id="css" value="css"><label for="css">CSS</label><br>
+    <input type="radio" name="javascript" id="javascript" value="JavaScript"><label for="javascript">JavaScript</label>
+    <p>
+        <!-- tulis kesimpulan uji coba disini -->
+         Radio button hanya akan menjadi satu grup pilihan jika memiliki atribut 
+"name" yang sama. Jika tidak diberi atribut name atau nilai name berbeda, 
+maka setiap radio button dapat dipilih secara bersamaan karena dianggap 
+sebagai grup yang berbeda.
+    </p>
+
+    <hr>
+    <h3>Uji Coba 3</h3>
+    <input type="checkbox" name="sepeda" id="1" value="Sepeda">
+    <label for="1">Aku punya sepeda</label>
+    <input type="checkbox" name="mobil" id="2" value="Mobil">
+    <label for="2">Aku punya mobil</label>
+    <input type="checkbox" name="perahu" id="3" value="Perahu">
+    <label for="3">Aku punya perahu</label>
+
+    <p>
+        Checkbox memungkinkan pengguna memilih lebih dari satu pilihan. 
+Atribut "name" tidak mempengaruhi jumlah pilihan yang bisa dipilih, 
+berbeda dengan radio button. Pada checkbox, atribut name hanya 
+digunakan untuk pengelompokan data saat form dikirim ke server.
+</p>
+
+    <hr>
+    <h3>Uji Coba 4</h3>
+    <label for="favcolor">Pilih warna dengan type="color" :</label>
+    <input type="color" id="favcolor" name="favcolor"><br>
+    <label for="b">Pilih tanggal dengan type="date" :</label>
+    <input type="date" id="b" name="tanggal"><br>
+    <input type="button" onclick="alert('Hello World')" value="Click Me!"><br>
+    
+    <p>
+        Input type="color" digunakan untuk memilih warna melalui color picker yang disediakan browser, 
+sehingga pengguna dapat memilih warna dengan lebih mudah dan visual. Input type="date" 
+digunakan untuk memilih tanggal melalui kalender otomatis dari browser, sehingga 
+meminimalkan kesalahan format penulisan tanggal. Sedangkan input type="button" 
+digunakan untuk menjalankan perintah tertentu, seperti menampilkan pesan 
+"Hello World" ketika tombol diklik. Ketiga tipe input ini menunjukkan bahwa 
+HTML menyediakan berbagai jenis input untuk mempermudah interaksi pengguna.
+    </p>
+
+    <hr>
+    <h3>Uji Coba 5</h3>
+    <label for="birthdaytime" id="btime">input dengan type datatime-local :</label>
+    <input type="datetime-local" id="btime" name="birthdaytime"><br>
+    <label for="bdaymonth">input dengan type month :</label><br>
+    <input type="month" id="bmonth" name="bdaymonth"><br>
+    <label for="email">Enter your email :</label>
+    <input type="email" id="email" name="email"><br>
+    <p>
+
+    </p>
+
+    <hr>
+    <h3>Uji Coba 6</h3>
+    <input type="image" src="img/dahsyat.jpeg" alt="Submit" width="48" height="48"><br>
+    <label for="myfile">Pilih File</label>
+    <input type="file" name="myfile" id="myfile"><br>
+    <input type="hidden" name="custId" id="custId" value="3487"><br>
+
+    <hr>
+    <h3>Uji coba 7</h3>
+    <label for="quantity">Quantity (between 1 and 5) :</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+    <label for="vol">Volumen (between 0 and 50) :</label>
+    <input type="range" name="vol" id="vol" min="0" max="50"><br>
+    <p>
+
+    </p>
+
+    <hr>
+    <h3>Uji Coba 8</h3>
+    <label for="homepage">Add your homepage :</label><br>
+    <input type="url" name="homepage" id="homepage"><br><br>
+    <label for="gsearch">Search Google :</label><br>
+    <input type="search" name="gsearch" id="gsearch"><br><br>
+    <label for="ph">Enter ur phone number :</label><br>
+    <input type="tel" name="phone" id="ph" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+    <p>
+
+    </p>
+
+    <hr>
+    <h3>Uji Coba 9</h3>
+    <label for="appt">Select a time</label>
+    <input type="time" name="appt" id="appt"><br>
+    <label for="week">Select a week</label>
+    <input type="week" name="week" id="week"><br>
+    <p>
+        
+    </p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p { /* selektor terhadap elemen <p> */
+        text-align: center;
+        color: aqua;
+    }
+
+    #kalimat { /* selektor terhadap elemen dengan atribut id='kalimat' */
+        text-align: left;
+        color: red;
+    }
+
+    .center { /*selektor terhadap elemen dengan atribut-class='tengon' */
+        text-align: center;
+        color: chocolate;
+    }
+
+    p.tengah {/* selektor terhadap elemen dengon elemen <p> tang mempunyai atribut class='tengah */
+        text-align: center;
+        color: darkmagenta;
+        display: block;
+        background-color: #777777;
+    }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="simple.html">Simple Selector</a></li>
+        <li><a href="combinator.html">Combinator Selector</a></li>
+        <li><a href="pseudo.html">Pseudo Class</a></li>
+        <li><a href="pseudo_elemen.html">Pseudo Element</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="header.html">Header</a></li>
+        <li><a href="display.html">Display</a></li>
+        <li><a href="hyperlink.html">Hyperlink</a></li>
+        <li><a href="selector.html">Selector</a></li>
+        <li><a href="border.html">Border</a></li>
+        <li><a href="margin.html">Margin</a></li>
+        <li><a href="padding.html">Padding</a></li>
+    </ul>
+
+    <p>
+        1. Penggunaan CSS sangat membantu web designer dalam menyusunn halaman yang konsisten pada proyek pembuatan halaman web
+    </p>
+
+    <p id="kalimat">
+        2. Dalam penulisan CSS sangat sederhana namun powerful dalam design
+    </p>
+
+    <p class="center">
+        3. CSS mempunyai sifat pewarisan secara default style anak akan mewarisi style dari parent kecuali anak mendeskripsikan stylenya sendiri
+    </p>
+
+    <p class="tengah">
+        4. Ini adalah hasil selector dengan elemen p dengan class tengah
+    </p>
+</body>
+</html>
